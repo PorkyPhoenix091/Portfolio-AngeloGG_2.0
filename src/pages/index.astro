@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Card from '../components/Card.astro'
+import Hero from '@components/Hero.astro'
 import { getAllPosts } from '../lib/cosmic'
 
 const data = await getAllPosts()
@@ -21,12 +22,13 @@ export interface Post {
 ---
 
 <Layout>
-  <h1 class="text-4xl font-bold">
-    Simple <span
+  <h1 class="self-center text-4xl font-bold">
+    Angelo Nicola  <span
       class="bg-gradient-to-b from-[#4f39fa] to-[#da62c4] bg-clip-text text-transparent"
-      >Astro</span
-    > Blog
+      >Giuliano</span
+    > 
   </h1>
+  <Hero/>
   <div class="my-6"></div>
   <p class="mb-4 text-2xl font-bold">This Blog is built with:</p>
   <section class="flex w-full flex-col gap-8 lg:flex-row">
